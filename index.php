@@ -38,7 +38,8 @@ use dszymczuk\Calendar;
             $calendar->setNameMonth($name_months);
             try
             {
-                $calendar->setMonth(10);
+//                $calendar->setMonth(10);
+                $calendar->setYear(2013);
             }catch (Exception $e)
             {
                 echo $e;

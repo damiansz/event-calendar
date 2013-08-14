@@ -51,9 +51,7 @@ class Calendar
 
 
     /**
-     * Number from 1 to 12
-     *
-     * @param $month
+     * @param $month - number from 1 to 12
      * @throws \Exception
      */
     public function setMonth($month)
@@ -67,6 +65,24 @@ class Calendar
         else
         {
             throw new \Exception('Invalid month number');
+        }
+    }
+
+    /**
+     * @param $year - number greater than 1979
+     * @throws \Exception
+     */
+    public function setYear($year)
+    {
+
+        if($year >= 1979 && is_numeric($year))
+        {
+            $this->year = $year;
+            $this->refreshTitle();
+        }
+        else
+        {
+            throw new \Exception('Invalid year number');
         }
     }
 
