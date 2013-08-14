@@ -3,7 +3,7 @@ Event Calendar
 
 Description
 -----------
-Event Calendar is a simple application to place a calendar with events on yout website. Simple configuration, multi format event storage support.
+Event Calendar is a simple application to place a calendar with events on your website. Simple configuration, multi format event storage support.
 
 
 Channel Log
