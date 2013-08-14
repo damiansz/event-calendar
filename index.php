@@ -1,8 +1,13 @@
 <?php
+require_once('config.php');
+require_once('Event.php');
+require_once('Calendar.php');
+require_once('pl.eventcalendar.config.php');
+
 use dszymczuk\EventDB;
 use dszymczuk\Calendar;
 
-require_once('config.php');
+
 ?>
 
 <html lang="pl">
@@ -26,8 +31,23 @@ require_once('config.php');
 
     <div class="row">
         <div class="offset1 span11">
+            <?php
 
-        </div>
+            $calendar = new Calendar();
+            $calendar->setNameDays($name_days);
+            $calendar->setNameMonth($name_months);
+            try
+            {
+                $calendar->setMonth(10);
+            }catch (Exception $e)
+            {
+                echo $e;
+            }
+
+            echo $calendar->generateCalendar();
+
+            ?>
+            </div>
     </div>
 
     <div class="row">

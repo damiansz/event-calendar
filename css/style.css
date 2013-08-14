@@ -5,3 +5,14 @@ div.container {
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
+
+
+
+/* Calendar Style */
+table.ec_main {
+    width: 294px;
+}
+
+table.ec_main td.ec_column {
+    width: 42px;
+}
