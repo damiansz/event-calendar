@@ -180,7 +180,17 @@ class Calendar
 
         while ($day_num <= $days_in_month)
         {
-            $calendar .= "<td> $day_num </td>";
+            // one day-cell
+            $calendar .= "<td>";
+
+            //day of month
+            $calendar .= $day_num;
+
+
+            $calendar .= "</td>";
+            // one day-cell
+
+
             $day_num++;
             $day_count++;
 
